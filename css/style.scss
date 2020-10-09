@@ -1,0 +1,31 @@
+@import "_normalize";
+@import "_header";
+@import "_slogan";
+@import "_production";
+@import "_about";
+@import "_news";
+@import "_footer";
+
+@font-face {
+    font-family: 'clear_sansbold';
+    src: url('../font/clearsans-bold-webfont.woff2') format('woff2'),
+         url('../font/clearsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clear_sansregular';
+    src: url('../font/clearsans-regular-webfont.woff2') format('woff2'),
+         url('../font/clearsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

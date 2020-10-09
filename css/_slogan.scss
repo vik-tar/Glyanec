@@ -1,0 +1,105 @@
+$mainbold: 'clear_sansbold';
+$mainregular: 'clear_sansregular';
+$secondary: 'robotoregular';
+$maincolor: #1AB0CE;
+$basecolor: #3A4047;
+
+.slogan {
+    position: relative;
+    background-color: #303442;
+    background-image: url(../img/back.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 140px;
+
+    &__block {
+        color: #fefefe;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 15px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            border-bottom: 1px solid #fefefe;
+            margin: 20px auto 15px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .recall {
+        position: absolute;
+        bottom: -54px;
+        left: 72%;
+        width: 108px;
+        height: 108px;
+        background-color: $maincolor;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 22px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        animation-name: recall;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+        @keyframes recall {
+            from {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1);
+            }
+            50% {
+                transform: scale(.9);
+            }
+            75% {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        &__img {
+            width: 23px;
+            height: 23px;
+        }
+
+        &__text {
+            color: #fefefe;
+        }
+    }
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fefefe;
+    background-color: $maincolor;
+    border: 1px solid $maincolor;
+
+    &:hover, :active {
+        color: $maincolor;
+        background-color: #fefefe;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slogan__title {
+        font-size: 57px;
+    }
+}
